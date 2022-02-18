@@ -72,19 +72,46 @@ h1 {
 }
 
 
-/***** Animation *****/
-
-.img {
-   animation: movement 0.4s ease infinite;
-   translate: transformX(20%);
-  display: block;
+/***** Animation *****/ 
+ .rainy .rain-animation  {
+    position: absolute;
+    width: 5px;
+    height: 35px;
+    background-color: #164A68;
+    animation: rain 2s ease infinite; 
+}
+  
+.position1 {
+    top: -35px;
+    left: 10vw;
 }
 
-@keyframes movement {
-   50% {
-   }
-
+.position2 {
+    top: -1000px;
+    left: 35vw;
 }
+
+.position3 {
+    top: -500px;
+    left: 60vw;
+}
+
+.position4 {
+    top: -2000px;
+    left: 90vw;
+}
+
+
+
+@keyframes rain {
+    100% {
+        top: 100vh;
+        opacity: 0;
+    
+    }
+}
+    
+
 
 
 /***** Media Queries *****/
