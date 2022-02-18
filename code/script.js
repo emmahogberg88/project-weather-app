@@ -83,13 +83,13 @@ const filterWeather = (data) => {
     else if (todayWeather === "Clear") {
         body.classList.toggle("sunny");
         text.innerHTML = `
-        <img class="img" src="./Designs/Design-2/icons/noun_Sunglasses_2055147.svg" alt="sun-glasses icon">
+        <img class="img" src="./icons/noun_Sunglasses_2055147.svg" alt="sun-glasses icon">
         <h1>Get your sunnies on. ${data.city.name} is rather great today.</h1>        
         `
     } else {
         body.classList.remove();
         text.innerHTML = `
-        <img class="img" src="./Designs/Design-2/icons/noun_Cloud_1188486.svg" alt="cloud icon">
+        <img class="img" src="./icons/noun_Cloud_1188486.svg" alt="cloud icon">
         <h1>Light a fire and get cosy. ${data.city.name} is looking grey today</h1> 
         `
     }
